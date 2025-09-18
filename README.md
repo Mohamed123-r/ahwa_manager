@@ -1,16 +1,28 @@
-# ahwa
+Ahwa Manager is a simple, cross-platform application built with Flutter for managing orders in a small coffee shop. It enables users to add new orders, view a list of pending orders, mark them as complete, and generate basic sales reports.
 
-A new Flutter project.
+Features
+Add Orders: Create new orders by specifying the customer's name, drink type, and price.
+Track Pending Orders: View a real-time list of all active orders.
+Complete Orders: Mark orders as finished with a single tap to remove them from the pending list.
+Sales Reports: Instantly generate a sales report that displays the total number of orders and identifies the best-selling drink.
+Project Structure
+The application's a basic structure to separate concerns:
 
-## Getting Started
+lib/screens/home_screen.dart: Contains the main user interface for managing orders.
+lib/managers/order_manager.dart: Houses the business logic for adding, completing, and reporting on orders.
+lib/models/order_model.dart: Defines the Order data model.
+Getting Started
+To get a local copy up and running, follow these simple steps.
 
-This project is a starting point for a Flutter application.
+Prerequisites
+Ensure you have the Flutter SDK installed on your machine. For installation instructions, see the official Flutter documentation.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Installation
+Clone the repository:
+git clone https://github.com/Mohamed123-r/ahwa_manager.git
+Navigate to the project directory:
+cd ahwa_manager
+Install the dependencies:
+flutter pub get
+Run the application:
+flutter run
